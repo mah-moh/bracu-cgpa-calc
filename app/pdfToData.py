@@ -5,7 +5,7 @@ def cgpa_calculator(filename, course_code=None, cgpa=None):
     course_name = re.compile(r'[A-z]{3}\d{3}')
     grade_expression = re.compile(r'[A-Z]{1}[+-]?')
 
-    non_credit_courses = ['ENG091', 'MAT091', 'MAT092']
+    non_credit_courses = ['ENG091', 'MAT091', 'MAT092', 'PHY101']
 
     course_and_grade = {}
 
