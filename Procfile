@@ -1,1 +1,1 @@
-web: gunicorn run:cgpa_calc
+web: gunicorn run:app
