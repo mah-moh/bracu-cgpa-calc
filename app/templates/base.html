@@ -2,11 +2,15 @@
 <title>{% block title %}{% endblock %}</title>
 
 <section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
+
   {% for message in get_flashed_messages() %}
     <div class="flash">{{ message }}</div>
   {% endfor %}
   {% block content %}{% endblock %}
+  <footer>
+    {% block footer %}
+    Made by <a href="https://github.com/mah-moh">Maheen</a> with ♥ <br>
+    <a href="https://github.com/mah-moh/bracu-cgpa-calc">Source code here</a>
+    {% endblock %}
+  </footer>
 </section>
