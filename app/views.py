@@ -27,7 +27,6 @@ def result():
         course_code = form.course_code.data.upper()
         cgpa = form.cgpa.data
         result = cgpa_calculator(filename=request.args.get('filename'), course_code=course_code, cgpa=cgpa)
-        print(result)
     else:
         result = cgpa_calculator(filename=request.args.get('filename'))
     return render_template('result.html', result=result, form=form)
