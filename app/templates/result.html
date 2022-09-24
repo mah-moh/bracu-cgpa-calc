@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Your CGPA is {{ result }} </h1>
+
+    <form method='POST' enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+
+        {{form.course_code.label}}
+        {{form.course_code()}}
+
+        {{form.cgpa.label}}
+        {{form.cgpa()}}
+        {{form.submit()}}
+    </form>
+{% endblock %}

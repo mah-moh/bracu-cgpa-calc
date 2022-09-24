@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Upload usis grade sheet</h1>
+
+    <form method='POST' enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+    </form>
+
+    <h2>How to use:</h2>
+    <p>
+        1.Go to <a href="https://usis.bracu.ac.bd/academia/">USIS</a> and login with your credentials.<br>
+        2. Download your grade sheet from usis as shown below.<br>
+        <img src="./static/files/tutorial.jpg" alt=""><br>
+        3. Upload the file here and get your CGPA as you want.
+    </p>
+    
+{% endblock %}
