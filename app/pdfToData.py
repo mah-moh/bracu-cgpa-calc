@@ -38,7 +38,7 @@ def cgpa_calculator(filename, course_code=None, cgpa=None):
 
     number_of_attempted_courses = len(title)
     CGPA = sum_of_grade_earned/number_of_attempted_courses
-    return "%.2f" % CGPA
+    return "%.2f" % CGPA, course_and_grade
 
 
     

@@ -13,3 +13,4 @@ app.config['UPLOAD_FOLDER'] = 'static/files'
 
 from app import views
 from app.pdfToData import cgpa_calculator
+from app.pdftodata1 import calculator

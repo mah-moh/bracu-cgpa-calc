@@ -1,20 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Upload usis grade sheet</h1>
+    <p class="h2 mt-4">Upload usis grade sheet</p>
 
-    <form method='POST' enctype='multipart/form-data'>
+    <form class="form-group" method='POST' enctype='multipart/form-data'>
         {{form.hidden_tag()}}
         {{form.file()}}
         {{form.submit()}}
     </form>
 
-    <h2>How to use:</h2>
-    <p>
-        1.Go to <a href="https://usis.bracu.ac.bd/academia/">USIS</a> and login with your credentials.<br>
-        2. Download your grade sheet from usis as shown below.<br>
-        <img src="./static/files/tutorial.jpg" alt=""><br>
-        3. Upload the file here and get your CGPA as you want.
-    </p>
-    
+    <div class="card text-white bg-secondary mt-4">
+        <div class="card-header">
+            <p class="h3">How to use:</p>
+        </div>
+        <div class="card-body">
+            <p class="h5">1.Go to <a class="badge badge-primary text-white" href="https://usis.bracu.ac.bd/academia/">USIS</a> and login with your credentials.<br></p>
+            <p class="h5">2. Download your grade sheet from usis as shown below.</p>
+            <img src="./static/files/tutorial.jpg" class="img-fluid" alt=""><br>
+            <p class="h5">3. Upload the file here and get your CGPA as you want.</p>
+        </div>
+    </div>
+
 {% endblock %}
